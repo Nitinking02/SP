@@ -429,7 +429,16 @@ void yyerror(const char *s) {
     printf("Error: %s\n", s);
 }
 
+HOW TO DO OUTPUT----(lex only)
 
+lex filename.l
+gcc lex.yy.c -o filename
+. /filename < textfile.txt
+
+HOW TO DO OUTPUT----(YACC ONLY)
+yacc program.y
+ gcc yacc.tab.h -o program
+ program.exe
 
 
 
